@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+    
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			ML App
+		</div>
+		<h2>Spam Detection</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>Enter Your Message Here..</p>
+		<textarea name="comment" rows="4" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict">
+		
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>

@@ -14,7 +14,7 @@ def index():
 
 @app.route("/", methods=['POST'])
 def predict():
-    url = "https://raw.githubusercontent.com/Jcharis/Machine-Learning-Web-Apps/master/Youtube-Spam-Detector-ML-Flask-App/YoutubeSpamMergedData.csv"
+    url = "https://raw.githubusercontent.com/prateeksawhney97/Flask-Application-for-Spam-vs-Non-Spam-Classification/master/YoutubeSpamMergedData.csv"
     df= pd.read_csv(url)
     df_data = df[["CONTENT","CLASS"]]
     # Features and Labels

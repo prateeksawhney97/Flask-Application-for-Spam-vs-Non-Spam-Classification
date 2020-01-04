@@ -7,27 +7,27 @@
 
 	<header>
 		<div class="container" style="background-color:rgb(106, 90, 205); border-radius: 10px;">
-			<div id="brandname">
-			ML App
+			<div id="brandname" style="background-color:DodgerBlue; margin-top: 50px; height: 100px; border-radius: 10px;">
+			<p style="font-size:40px; text-align: center;">Machine Learning Application for Classifying Spam & Non-Spam Messages</p>
 			</div>
-			<h2>Spam Detection</h2>
-		
+			<p style="font-size:35px; text-align: center;">Spam Detection for Input Message</p>
 		</div>
 	</header>
-	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Message</b></p>
-	<p>The message was " {{ comment }} "</p>
-    	<div class="results">
+	<div style="background-color:powderblue; border: 3px solid green; border-radius: 7px;">
+		<p style="color:blue; font-size:25px; text-align: center;"><b>Results for Input Message</b></p>
+		<p style="margin-left: 55px; font-size: 25px;">The message was " {{ comment }} "</p>
+    		<div class="results">
 
     
 
 		
-		{% if prediction == 1%}
-		<h2 style="color:red;">Spam</h2>
-		{% elif prediction == 0%}
-		<h2 style="color:blue;">Not Spam</h2>
-		{% endif %}
+			{% if prediction == 1%}
+			<h2 style="color:red; text-align: center;">Spam</h2>
+			{% elif prediction == 0%}
+			<h2 style="color:blue; text-align: center;">Not Spam</h2>
+			{% endif %}
 
+		</div>
 	</div>
-
 </body>
 </html>

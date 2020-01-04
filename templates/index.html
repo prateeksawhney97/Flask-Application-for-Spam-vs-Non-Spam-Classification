@@ -2,25 +2,24 @@
 <html>
 <head>
 	<title>Home</title>
-	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
-	<!--<link href="/static/css/bootstrap.min.css" rel="stylesheet">-->
-    
+	<!--<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">-->
+	<!-- Correct method for importing a stylesheet. Make a folder static/css/main.css-->
 </head>
-<body>
+<body style="background-color:MediumSeaGreen;">
 
 	<header>
-		<div class="container">
-		<div id="brandname">
-			ML App
-		</div>
-		<h2>Spam Detection</h2>
+		<div class="container" style="background-color:rgb(106, 90, 205);">
+			<div id="brandname" style="background-color:DodgerBlue; margin-top: 50px;">
+			<p style="font-size:40px; text-align: center;">Machine Learning Application for Classifying Spam & Non-Spam Messages</p>
+			</div>
+			<p style="font-size:35px; text-align: center;">Flask Application deployed on Google Cloud Platform</p>
 		
-	</div>
+		</div>
 	</header>
 
-	<div class="ml-container">
+	<div class="ml-container" style="background-color:powderblue; border: 3px solid green;">
 
-		<form action="{{ url_for('predict')}}" method="POST">
+		<form id="myform" action="{{ url_for('predict')}}" method="POST">
 		<p>Enter Your Message Here..</p>
 		<textarea name="comment" rows="4" cols="50"></textarea>
 		<br/>

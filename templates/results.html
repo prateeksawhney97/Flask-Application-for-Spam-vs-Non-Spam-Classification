@@ -3,29 +3,29 @@
 <head>
 	<title></title>
 </head>
-<body>
+<body style="background-color:MediumSeaGreen;">
 
 	<header>
-		<div class="container">
-		<div id="brandname">
+		<div class="container" style="background-color:rgb(106, 90, 205); border-radius: 10px;">
+			<div id="brandname">
 			ML App
-		</div>
-		<h2>Spam Detection</h2>
+			</div>
+			<h2>Spam Detection</h2>
 		
-	</div>
+		</div>
 	</header>
 	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Message</b></p>
 	<p>The message was " {{ comment }} "</p>
-    <div class="results">
+    	<div class="results">
 
     
 
 		
-	{% if prediction == 1%}
-	<h2 style="color:red;">Spam</h2>
-	{% elif prediction == 0%}
-	<h2 style="color:blue;">Not Spam</h2>
-	{% endif %}
+		{% if prediction == 1%}
+		<h2 style="color:red;">Spam</h2>
+		{% elif prediction == 0%}
+		<h2 style="color:blue;">Not Spam</h2>
+		{% endif %}
 
 	</div>
 
